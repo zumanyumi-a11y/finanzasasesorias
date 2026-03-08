@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visión Financiera - Asesoría contable, administrativa y guía orientativa sobre gestión empresarial y Patagonia Personas en Argentina.">
+    <title>Visión Financiera | Asesoría y Gestión Empresarial</title>
+    
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --secondary: #64748b;
+            --success: #22c55e;
+            --warning: #f59e0b;
+        }
+
+        body, html {
+            margin: 0; padding: 0;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        /* Banner de Seguridad (Crucial para Ads) */
+        .safety-bar {
+            background: var(--warning);
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        nav {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; top: 0; z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none; color: var(--primary);
+            margin: 0 15px; font-weight: 500; font-size: 0.9rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), 
+                        url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center;
+            height: 60vh; display: flex; align-items: center;
+            justify-content: center; color: white; text-align: center;
+        }
+
+        section { padding: 60px 10%; }
+
+        .card {
+            background: white; padding: 30px; border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom: 20px;
+        }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+
+        /* Cuadro de Registro Rápido */
+        .register-box {
+            background: var(--primary); color: white; padding: 40px;
+            border-radius: 15px; text-align: center;
+        }
+
+        input, textarea {
+            width: 100%; padding: 12px; margin: 10px 0;
+            border-radius: 6px; border: 1px solid #ddd;
+        }
+
+        .btn-ws { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin: 10px; }
+        .btn-submit { background: var(--accent); color: white; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+
+        footer { background: #f1f5f9; padding: 40px 10%; font-size: 0.85rem; color: var(--secondary); border-top: 1px solid #e2e8f0; }
+        .legal-links a { margin-right: 15px; color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="safety-bar">
+        ⚠️ SEGURIDAD PRIMERO: No solicitamos claves, tokens ni acceso a cuentas bancarias. Sitio informativo independiente.
+    </div>
+
+    <nav>
+        <strong>VISIÓN FINANCIERA</strong>
+        <div>
+            <a href="#inicio">Inicio</a>
+            <a href="#quienes-somos">Nosotros</a>
+            <a href="#patagonia">Patagonia Personas</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div>
+            <h1 style="font-size: 3rem;">Visión Financiera Estratégica</h1>
+            <p style="font-size: 1.2rem;">Asesoría contable, administrativa y herramientas de organización para empresas en Argentina.</p>
+        </div>
+    </header>
+
+    <section id="registro">
+        <div class="register-box">
+            <h2>Registro Rápido de Consulta</h2>
+            <p>Dejanos tus datos para recibir asesoramiento administrativo especializado.</p>
+            <form action="#">
+                <div style="display: flex; gap: 10px;">
+                    <input type="text" placeholder="Nombre Completo" required>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                </div>
+                <textarea placeholder="¿En qué podemos ayudarte con tu gestión empresarial?"></textarea>
+                <button type="submit" class="btn-submit">Enviar Solicitud de Información</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="quienes-somos">
+        <div class="grid">
+            <div class="card">
+                <h3>Quiénes Somos</h3>
+                <p>Somos un equipo de profesionales dedicados a la consultoría financiera y contable. No somos una entidad financiera ni otorgamos préstamos; nuestro enfoque es la optimización administrativa.</p>
+            </div>
+            <div class="card">
+                <h3>Misión y Visión</h3>
+                <p><strong>Misión:</strong> Brindar claridad administrativa a las PyMEs argentinas.<br>
+                <strong>Visión:</strong> Ser el soporte líder en organización contable y estratégica del país.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="patagonia" style="background: #eff6ff; border-radius: 20px;">
+        <h2>Información Patagonia Personas</h2>
+        <div class="card">
+            <p><strong>Guía orientativa para empresas:</strong> Facilitamos información sobre el ecosistema de Patagonia Personas, opciones de gestión empresarial, herramientas de cobro y organización financiera eficiente en Argentina.</p>
+            <ul>
+                <li>Gestión de perfiles administrativos.</li>
+                <li>Organización de cobros y pagos.</li>
+                <li>Optimización de herramientas bancarias para empresas.</li>
+            </ul>
+            <p><small><em>*Sitio independiente de contenido informativo. No recolectamos datos sensibles bancarios.</em></small></p>
+        </div>
+    </section>
+
+    <section id="como-funciona">
+        <h2>Cómo Funciona</h2>
+        <div class="grid">
+            <div class="card"><h3>1. Contacto</h3><p>Escribinos por WhatsApp o formulario.</p></div>
+            <div class="card"><h3>2. Diagnóstico</h3><p>Analizamos tu situación administrativa actual.</p></div>
+            <div class="card"><h3>3. Solución</h3><p>Armamos un plan de organización a tu medida.</p></div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>FAQ - Preguntas Frecuentes</h2>
+        <div class="card">
+            <p><strong>¿Son un banco?</strong> No, somos una consultoría administrativa independiente.</p>
+            <p><strong>¿Piden mis claves?</strong> Jamás. La seguridad es nuestra prioridad. Cuidamos tu privacidad.</p>
+        </div>
+    </section>
+
+    <section id="contacto" style="text-align: center;">
+        <h2>Contactanos</h2>
+        <p>Podés escribir por WhatsApp o usar el formulario para armar el mensaje automáticamente.</p>
+        <a href="https://wa.me/XXXXXXXXXXX" class="btn-ws">Chatear por WhatsApp</a>
+    </section>
+
+    <footer>
+        <div class="grid">
+            <div>
+                <h4>Visión Financiera</h4>
+                <p>Sitio informativo. Material orientativo para personas y empresas.</p>
+                <p>Usamos cookies esenciales para mejorar la experiencia.</p>
+            </div>
+            <div>
+                <h4>Legales</h4>
+                <div class="legal-links">
+                    <a href="#">Política de Privacidad</a><br>
+                    <a href="#">Términos y Condiciones</a><br>
+                    <a href="#">Aviso Legal</a>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 30px; border-top: 1px solid #ddd; padding-top: 20px; text-align: center;">
+            <p>AVISO IMPORTANTE: No somos entidad financiera. No solicitamos claves, tokens, ni acceso a cuentas. Seguridad primero.</p>
+            <p>&copy; 2026 VisionFinanciera.space - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
